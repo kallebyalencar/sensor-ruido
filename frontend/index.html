@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Ruído</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Dashboard de Monitoramento de Ruído</h1>
+</header>
+
+<section class="cards-container">
+    <div class="card">
+        <h2>Última Medição</h2>
+        <p id="ultimoValor">-- dB</p>
+    </div>
+
+    <div class="card">
+        <h2>Nível</h2>
+        <p id="ultimoNivel">--</p>
+    </div>
+
+    <div class="card">
+        <h2>Local</h2>
+        <p id="ultimoAndar">--</p>
+    </div>
+
+    <div class="card filtro-card">
+        <h2>Filtrar por Ambiente</h2>
+        <select id="filtroAmbiente">
+            <option value="">Todos</option>
+        </select>
+    </div>
+</section>
+
+<section class="tabela-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Local</th>
+                <th>Valor (dB)</th>
+                <th>Ambiente</th>
+                <th>Data</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="dadosTabela"></tbody>
+    </table>
+</section>
+
+<script src="./js/dashboard.js"></script>
+</body>
+</html>
