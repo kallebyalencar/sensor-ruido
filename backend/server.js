@@ -8,10 +8,10 @@ app.use(express.json());
 
 const db = new pg.Client({
     user: "postgres",
-    host: "trolley.proxy.rlwy.net",
-    database: "monitor-ruido",
-    password: "edOpmuFxGkyYzQIALiFNlSbQRQRxupJR",
-    port: 58396
+    host: "gondola.proxy.rlwy.net",
+    database: "railway",
+    password: "bcsWaQwjIFyDeFNBvPWHqXlvoWnlHyrH",
+    port: 23917
 });
 
 db.connect()
