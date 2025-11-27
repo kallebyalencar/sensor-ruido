@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d0d0d;
+  font-family: Arial, sans-serif;
+  color: #eee;
+}
+
+header {
+  background: #5a2ea6;
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  box-shadow: 0px 0px 10px #000;
+}
+
+#alerta {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #18c46a;
+  padding: 12px 18px;
+  border-radius: 10px;
+  display: none;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 15px #000;
+  z-index: 999;
+}
+
+main {
+  padding: 30px;
+}
+
+/* CARDS DE MÉTRICAS --------------------------------------- */
+
+#metricas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: #1d1d1d;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+  border-left: 5px solid #5a2ea6;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  margin: 0 0 15px 0;
+  color: #b985ff;
+}
+
+.card p {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* LISTA DE REGISTROS -------------------------------------- */
+
+#registros h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #b985ff;
+}
+
+#lista-registros {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registro {
+  background: #151515;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #000;
+  border-left: 5px solid #5a2ea6;
+}
+
+.registro strong {
+  color: #a05aff;
+}
+
+/* CORES PARA OS NÍVEIS ---------------------------------- */
+
+.alto {
+  color: #ff4e4e;
+  font-weight: bold;
+}
+
+.moderado {
+  color: #ffb84d;
+  font-weight: bold;
+}
+
+.baixo {
+  color: #61ff6d;
+  font-weight: bold;
+}
